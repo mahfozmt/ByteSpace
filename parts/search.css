@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Search page (search.html) — page-specific rules, prefix search-
+   ========================================================================== */
+
+/* ---- Hero ---- */
+.search-hero { position: relative; height: 360px; overflow: hidden; }
+.search-hero h1 {
+  position: absolute; left: 0; right: 0; top: 159px; text-align: center;
+  font-size: 36px; color: var(--neutral-50);
+}
+.search-bar { position: absolute; left: 0; right: 0; top: 239px; display: flex; justify-content: center; align-items: flex-start; gap: 16px; }
+.search-bar__field {
+  display: flex; align-items: center; gap: 12px; width: 461px; height: 52px; padding: 0 27px;
+  border-radius: 24px; background: #fff;
+}
+.search-bar__field img { width: 17.5px; height: 17.5px; flex: none; }
+.search-bar__field input {
+  flex: 1; min-width: 0; border: 0; outline: 0; background: transparent;
+  font-size: 18px; color: var(--neutral-950);
+}
+.search-bar__field input::placeholder { color: var(--neutral-400); }
+.search-bar__scope { display: block; width: 147px; height: 48px; }
+.search-bar__scope select {
+  width: 100%; height: 100%; padding: 0 40px 0 24.5px; border: 0; border-radius: 24px; outline: 0;
+  background: var(--secondary-400) url("../assets/svg/icon-chevron-down.svg") no-repeat right 29px center / 12px auto;
+  color: var(--neutral-950); font-size: 16px; font-weight: 500; line-height: 1.2;
+  appearance: none; -webkit-appearance: none; cursor: pointer;
+}
+.search-bar__scope select:hover { background-color: var(--secondary-300); }
+
+/* ---- Toolbar + pills ---- */
+.search-main { width: min(100% - 2 * var(--margin), var(--content-width)); margin-inline: auto; padding-top: 72px; }
+.search-toolbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.search-toolbar__filters { display: flex; gap: 17px; }
+
+/* SHARED-CANDIDATE: outlined pill button with leading icon (filter/sort triggers) */
+.search-chip {
+  display: inline-flex; align-items: center; gap: 9px; height: 47px; padding: 0 18px;
+  border: 1px solid var(--neutral-200); border-radius: 23.5px; background: #fff;
+  font-size: 16px; font-weight: 400; line-height: 1.2; color: var(--neutral-700); white-space: nowrap;
+  transition: border-color .2s, background-color .2s;
+}
+.search-chip:hover { border-color: var(--neutral-400); }
+.search-chip img { flex: none; }
+.search-chip--filter { width: 95px; padding-left: 18.7px; }
+.search-chip--level { width: 96px; padding-left: 19px; gap: 9px; }
+.search-chip--category { width: 126px; padding-left: 17.5px; gap: 7px; }
+.search-chip--sort { width: 156px; padding-left: 17.5px; gap: 8px; }
+
+.search-pills { display: flex; gap: 16.4px; margin-top: 33px; }
+.search-pills .pill { flex: none; padding: 0 17.3px; font-weight: 400; }
+.search-pills .pill.is-active { font-weight: 400; }
+
+/* ---- Course grid ---- */
+.search-grid {
+  display: grid; grid-template-columns: repeat(3, 373px); justify-content: space-between; gap: 40px 0;
+  margin-top: 77px; padding: 0 0 0 1px;
+}
+.search-grid__item[hidden] { display: none; }
+.search-empty { margin-top: 77px; padding: 60px 0; text-align: center; font-size: 18px; color: var(--neutral-500); }
+
+/* ---- Pagination ---- */
+.search-pagination { display: flex; align-items: flex-start; justify-content: center; gap: 24.5px; margin-top: 73px; padding-bottom: 72px; }
+.search-pagination ol { display: flex; align-items: center; gap: 24px; height: 47px; margin: 0; padding: 0; list-style: none; }
+.search-pagination ol button {
+  min-width: 12px; padding: 0; border: 0; background: transparent;
+  font-size: 20px; font-weight: 500; line-height: 1.2; color: var(--neutral-950);
+}
+.search-pagination ol button:hover { color: var(--primary-800); }
+.search-pagination ol button.is-current { color: var(--neutral-200); }
+.search-pagination__arrow {
+  display: grid; place-items: center; width: 55px; height: 47px; padding: 0;
+  border: 1px solid var(--neutral-200); border-radius: 23.5px; background: #fff;
+  transition: border-color .2s;
+}
+.search-pagination__arrow:hover { border-color: var(--neutral-400); }
+
+/* SHARED-CANDIDATE: mobile nav drawer (.site-header.is-open) */
+@media (max-width: 720px) {
+  .site-header { position: absolute; }
+  .site-header__inner { width: calc(100% - 40px); align-items: center; padding-top: 20px; flex-wrap: wrap; }
+  .nav-toggle { display: block; margin-left: auto; }
+  .site-nav, .site-header__actions { display: none; }
+  .site-header.is-open { background: var(--primary-900); padding-bottom: 20px; }
+  .site-header.is-open .site-nav,
+  .site-header.is-open .site-header__actions { display: flex; position: static; transform: none; width: 100%; margin: 16px 0 0; }
+  .site-header.is-open .site-nav ul { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .site-header.is-open .site-header__actions { flex-wrap: wrap; gap: 20px; }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1100px) {
+  .search-main { width: calc(100% - 2 * var(--margin)); }
+  .search-grid { grid-template-columns: repeat(2, 372px); }
+  .search-hero h1 { font-size: 32px; }
+  .search-pills { flex-wrap: wrap; }
+  .site-header__inner { width: calc(100% - 2 * var(--margin)); }
+}
+@media (max-width: 860px) {
+  .search-grid { grid-template-columns: minmax(0, 372px); justify-content: center; }
+}
+@media (max-width: 720px) {
+  .search-hero { height: 320px; }
+  .search-hero h1 { top: 120px; font-size: 28px; padding: 0 20px; }
+  .search-bar { top: 200px; flex-direction: column; align-items: stretch; padding: 0 20px; gap: 12px; }
+  .search-bar__field { width: 100%; }
+  .search-bar__scope { width: 100%; }
+  .search-main { padding-top: 40px; }
+  .search-toolbar { flex-wrap: wrap; }
+  .search-toolbar__filters { flex-wrap: wrap; gap: 10px; }
+  .search-pills { flex-wrap: nowrap; overflow-x: auto; margin-top: 24px; padding-bottom: 6px; scrollbar-width: thin; }
+  .search-grid { margin-top: 32px; gap: 24px 0; }
+  .search-grid .course-card { width: 100%; }
+  .search-pagination { gap: 12px; margin-top: 40px; padding-bottom: 48px; }
+  .search-pagination ol { gap: 14px; }
+  .search-pagination__arrow { width: 44px; }
+}
+@media (min-width: 721px) and (max-width: 1100px) {
+  .search-grid { grid-template-columns: repeat(2, minmax(0, 372px)); }
+}
+.search-grid .course-card__title { max-width: 290px; }
+.search-grid .course-card { width: 373px; height: 384px; }

@@ -1,0 +1,51 @@
+/* Creator profile page — classes prefixed creator- */
+
+.page-creator main { display: block; }
+
+/* Hero */
+.creator-hero { position: relative; height: 592px; overflow: hidden; color: #fff; }
+.creator-hero__inner { position: absolute; left: 122px; top: 172px; width: 1198px; }
+.creator-id { display: flex; align-items: flex-start; gap: 24px; }
+.creator-id__avatar { width: 96px; height: 96px; border-radius: 24px; object-fit: cover; flex: none; }
+.creator-id h1 { display: flex; align-items: center; gap: 10px; margin-top: 7.5px; font-size: 35px; color: var(--neutral-50); }
+.creator-badge {
+  display: inline-flex; align-items: center; justify-content: center; height: 35px; padding: 0 25px; border-radius: 17.5px;
+  background: var(--secondary-400); color: var(--neutral-950); font-family: var(--font-body); font-size: 16px; font-weight: 500; line-height: 1;
+}
+.creator-id__role { margin-top: 10px; font-size: 18px; line-height: 1.6; color: var(--neutral-50); }
+.creator-bio { margin-top: 40px; font-size: 18px; line-height: 1.6; color: var(--neutral-50); }
+.creator-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 41px; }
+.creator-stats { display: flex; gap: 16px; }
+.creator-stats li {
+  display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 24px; border-radius: 23px;
+  background: #fff; color: var(--neutral-950); font-size: 18px; font-weight: 500; line-height: 1.2;
+}
+.creator-stats b { font-weight: 500; color: var(--primary-800); }
+.creator-follow { width: 101px; height: 46px; padding: 0; font-size: 18px; }
+
+/* Toolbar + grid */
+.creator-courses { padding: 62px 0 60px; }
+.creator-toolbar { display: flex; justify-content: space-between; align-items: center; width: 1201px; margin-left: 119px; }
+.creator-toolbar__filters { display: flex; gap: 17px; }
+/* SHARED-CANDIDATE: outlined tool pill with leading icon (filter / sort controls) */
+.creator-tool {
+  display: inline-flex; align-items: center; height: 47px; padding: 0 16px 0 19px; border: 1px solid var(--neutral-200);
+  border-radius: 23.5px; background: #fff; color: var(--neutral-700); font-family: var(--font-body);
+  font-size: 16px; font-weight: 500; line-height: 1.2; white-space: nowrap; cursor: pointer; transition: background-color .2s, border-color .2s;
+}
+.creator-tool img { flex: none; margin-right: 10px; }
+.creator-tool:nth-child(1) img { margin-right: 10px; }
+.creator-tool:hover { background: var(--neutral-50); }
+.creator-tool[aria-pressed="true"] { border-color: var(--primary-800); color: var(--primary-800); }
+.creator-grid {
+  display: grid; grid-template-columns: repeat(3, 372px); gap: 41px; row-gap: 51px; width: 1198px; margin: 41px 0 0 119px;
+}
+
+/* SHARED-CANDIDATE: is-open mobile nav for dark-on-blue header */
+@media (max-width: 1100px) {
+  .site-header.is-open .site-nav,
+  .site-header.is-open .site-header__actions { display: flex; }
+}
+
+/* Design shows the Home link raised and regular weight on this page */
+.page-creator .site-nav a.is-active { position: relative; top: -3px; font-weight: 400; }

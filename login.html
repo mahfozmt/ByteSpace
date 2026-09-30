@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In — ByteSpace</title>
+  <meta name="description" content="Sign in to ByteSpace for instant access to a world of knowledge.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="parts/auth.css">
+</head>
+<body class="page-auth page-login">
+
+  <main class="auth grid-bg">
+    <a class="auth-logo" href="index.html" aria-label="ByteSpace home"><img src="assets/svg/icon-logo-mark.svg" alt="ByteSpace" width="30" height="33"></a>
+
+    <div class="auth-intro">
+      <h2 class="auth-intro__title">Sign in with ease</h2>
+      <p>Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge.</p>
+    </div>
+
+    <div class="auth-art" aria-hidden="true">
+      <article class="course-card auth-course auth-course--back">
+        <div class="course-card__media"><img src="assets/img/auth-dashboard-back.jpg" alt="" width="341" height="195">
+          <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></div>
+        <div class="course-card__head"><h3 class="course-card__title">Build Digital Asset</h3></div>
+        <p class="course-card__by">by <span>purepearl studio</span></p>
+        <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+          <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+        <p class="course-card__price">$25<small>/lifetime</small></p>
+      </article>
+
+      <article class="course-card auth-course auth-course--front">
+        <div class="course-card__media"><img src="assets/img/auth-dashboard-front.jpg" alt="" width="341" height="195">
+          <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></div>
+        <div class="course-card__head"><h3 class="course-card__title">the Power of Big Data</h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star-lime.svg" alt=""></span></div>
+        <p class="course-card__by">by <span>purepearl studio</span></p>
+        <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+          <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+        <p class="course-card__price">$25<small>/lifetime</small></p>
+      </article>
+
+      <img class="orn auth-orn-cone" src="assets/img/3d-cone-lime.png" alt="" width="189" height="189">
+      <img class="orn auth-orn-squiggle orn--flip" src="assets/img/3d-squiggle-a-white.png" alt="" width="176" height="176">
+      <img class="orn auth-orn-torus" src="assets/img/3d-torus-lime.png" alt="" width="147" height="147">
+
+      <div class="auth-students">
+        <strong>Happy Students</strong>
+        <span class="rate"><b>4.5</b> <i>(240)</i> <img src="assets/svg/icon-star-blue.svg" alt="" width="14.5" height="14"></span>
+        <div class="avatars avatars--lg">
+          <img src="assets/img/avatar-asian-man.png" alt=""><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-baker.png" alt=""><img src="assets/img/avatar-cyclist.png" alt=""><img src="assets/img/avatar-hat.png" alt=""><img src="assets/img/avatar-blue-glasses.png" alt=""><img src="assets/img/avatar-beanie.png" alt=""><span>2K+</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="auth-card" aria-labelledby="auth-title">
+      <p class="auth-card__kicker">Sign In</p>
+      <h1 class="auth-card__title" id="auth-title">Welcome Back</h1>
+
+      <form class="auth-form" action="index.html" method="get" novalidate>
+        <label class="field auth-field">
+          <span class="auth-field__label">Email</span>
+          <input type="email" name="email" placeholder="designer@example.com" autocomplete="email" required>
+          <span class="auth-field__error" role="alert"></span>
+        </label>
+        <label class="field auth-field">
+          <span class="auth-field__label">Password</span>
+          <input type="password" name="password" placeholder="********" autocomplete="current-password" minlength="8" required>
+          <span class="auth-field__error" role="alert"></span>
+        </label>
+        <div class="auth-form__actions">
+          <a class="auth-form__forgot" href="login.html#">Forgot password?</a>
+          <button class="btn btn--primary auth-submit" type="submit">Sign In</button>
+        </div>
+      </form>
+
+      <div class="auth-divider"><span>or</span></div>
+
+      <div class="auth-social">
+        <button class="auth-social__btn" type="button" aria-label="Continue with Facebook"><img src="assets/svg/icon-facebook.svg" alt="" width="34.5" height="34.5"></button>
+        <button class="auth-social__btn" type="button" aria-label="Continue with Google"><img src="assets/svg/icon-google.svg" alt="" width="34" height="34.5"></button>
+      </div>
+
+      <p class="auth-card__switch">New user? <a href="register.html">Create an account</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="parts/auth.js"></script>
+</body>
+</html>

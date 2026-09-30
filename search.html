@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Your Next Course — ByteSpace</title>
+  <meta name="description" content="Search and filter hundreds of online courses from expert creators on ByteSpace.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="parts/search.css">
+</head>
+<body class="page-search">
+
+  <section class="search-hero grid-bg" aria-labelledby="search-title">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html" aria-label="ByteSpace home"><img src="assets/svg/logo.svg" alt="ByteSpace" width="171" height="37"></a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="is-active" href="search.html" aria-current="page">Courses</a></li>
+            <li><a href="creator-profile.html">Creators</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Join Us</a>
+          <a class="site-header__cart" href="course-details.html" aria-label="Cart"><img src="assets/svg/icon-cart.svg" alt="" width="16" height="20"></a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+    <h1 id="search-title">Find Your Next Course</h1>
+    <form class="search-bar" action="search.html" role="search">
+      <label class="search-bar__field">
+        <img src="assets/svg/icon-search.svg" alt="" width="18" height="18">
+        <span class="visually-hidden">Search</span>
+        <input type="search" name="q" placeholder="Search">
+      </label>
+      <label class="search-bar__scope">
+        <span class="visually-hidden">Search in</span>
+        <select name="scope"><option>Courses</option><option>Creators</option></select>
+      </label>
+    </form>
+  </section>
+
+  <main class="search-main">
+    <div class="search-toolbar">
+      <div class="search-toolbar__filters">
+        <button class="search-chip search-chip--filter" type="button"><img src="assets/svg/icon-filter.svg" alt="" width="17" height="17">Filter</button>
+        <button class="search-chip search-chip--level" type="button"><img src="assets/svg/icon-level-dark.svg" alt="" width="16" height="17">Level</button>
+        <button class="search-chip search-chip--category" type="button"><img src="assets/svg/icon-category.svg" alt="" width="20" height="21">Category</button>
+      </div>
+      <button class="search-chip search-chip--sort" type="button"><img src="assets/svg/icon-sort.svg" alt="" width="19" height="13">Most relevant</button>
+    </div>
+
+    <div class="search-pills" role="tablist" aria-label="Course categories" data-tabs>
+        <button class="pill is-active" type="button" role="tab" aria-selected="true" data-filter-cat="all">Featured</button>
+        <button class="pill" type="button" role="tab" aria-selected="false" data-filter-cat="music">Music</button>
+        <button class="pill" type="button" role="tab" aria-selected="false" data-filter-cat="drawing-painting">Drawing &amp; Painting</button>
+        <button class="pill" type="button" role="tab" aria-selected="false" data-filter-cat="marketing">Marketing</button>
+        <button class="pill" type="button" role="tab" aria-selected="false" data-filter-cat="animation">Animation</button>
+        <button class="pill" type="button" role="tab" aria-selected="false" data-filter-cat="social-media">Social Media</button>
+        <button class="pill" type="button" role="tab" aria-selected="false" data-filter-cat="ui-ux-design">UI/UX Design</button>
+        <button class="pill" type="button" role="tab" aria-selected="false" data-filter-cat="creative-marketing">Creative Marketing</button>
+        <button class="pill" type="button" role="tab" aria-selected="false" data-filter-cat="cooking">Cooking</button>
+    </div>
+
+    <h2 class="visually-hidden">Courses</h2>
+    <ul class="search-grid" id="search-grid">
+        <li class="search-grid__item" data-category="ui-ux-design">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-figma-basic.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Learn Figma from Basic</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="drawing-painting animation">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-digital-asset.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Build Digital Asset</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-big-data.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">the Power of Big Data</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="social-media">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-productivity.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Balancing Productivity and Life</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="marketing creative-marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-money.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Mastering Money Management</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="creative-marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-startup.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">From Idea to Startup Success</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="ui-ux-design">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-figma-basic.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Learn Figma from Basic</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="drawing-painting animation">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-digital-asset.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Build Digital Asset</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-big-data.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">the Power of Big Data</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="social-media">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-productivity.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Balancing Productivity and Life</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="marketing creative-marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-money.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Mastering Money Management</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="creative-marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-startup.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">From Idea to Startup Success</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="ui-ux-design">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-figma-basic.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Learn Figma from Basic</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="drawing-painting animation">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-digital-asset.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Build Digital Asset</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-big-data.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">the Power of Big Data</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="social-media">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-productivity.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Balancing Productivity and Life</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="marketing creative-marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-money.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Mastering Money Management</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+        <li class="search-grid__item" data-category="creative-marketing">
+          <article class="course-card">
+            <a class="course-card__media" href="course-details.html"><img src="assets/img/course-startup.jpg" alt="" width="341" height="195">
+              <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+            <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">From Idea to Startup Success</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+            <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+            <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+              <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+            <p class="course-card__price">$25<small>/lifetime</small></p>
+          </article>
+        </li>
+    </ul>
+    <p class="search-empty" hidden>No courses in this category yet.</p>
+
+    <nav class="search-pagination" aria-label="Pagination">
+      <button class="search-pagination__arrow" type="button" aria-label="Previous page"><img src="assets/svg/icon-arrow-left.svg" alt="" width="13" height="21"></button>
+      <ol>
+        <li><button class="is-current" type="button" aria-current="page">1</button></li>
+        <li><button type="button">2</button></li>
+        <li><button type="button">3</button></li>
+        <li><button type="button">4</button></li>
+        <li><button type="button">5</button></li>
+      </ol>
+      <button class="search-pagination__arrow" type="button" aria-label="Next page"><img src="assets/svg/icon-arrow-right.svg" alt="" width="13" height="21"></button>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="index.html" aria-label="ByteSpace home"><img src="assets/svg/logo-dark.svg" alt="ByteSpace" width="171" height="37"></a>
+        <p>Stay Up to date with our latest features and releases by joining our newsletter.</p>
+      </div>
+      <form class="site-footer__form" action="#">
+        <label class="visually-hidden" for="nl-email">Email</label>
+        <input id="nl-email" type="email" placeholder="Enter your email">
+        <button class="btn btn--primary" type="submit">Search</button>
+      </form>
+      <p class="site-footer__legal">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+      <nav class="site-footer__cols" aria-label="Footer">
+        <ul><li><a href="search.html">Featured Courses</a></li><li><a href="search.html">Featured Categories</a></li><li><a href="search.html?c=business">Business</a></li><li><a href="search.html?c=it-software">IT</a></li><li><a href="search.html?c=design">Design</a></li></ul>
+        <ul><li><a href="search.html?c=development">Development</a></li><li><a href="search.html?c=marketing">Marketing</a></li><li><a href="search.html?c=photography">Photography</a></li><li><a href="search.html">Finance</a></li><li><a href="search.html">Sport</a></li></ul>
+        <ul><li><a href="register.html">Become a Creator</a></li><li><a href="creator-profile.html">Affiliate Program</a></li><li><a href="404.html">Contact</a></li><li><a href="404.html">Help</a></li><li><a href="404.html">About</a></li></ul>
+      </nav>
+      <div class="site-footer__bar">
+        <p>@ 2023 ByteSpace. All rights reserved.</p>
+        <ul><li><a href="404.html">Privacy Policy</a></li><li><a href="404.html">Terms of Service</a></li><li><a href="404.html">Cookies Settings</a></li></ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="parts/search.js"></script>
+</body>
+</html>
