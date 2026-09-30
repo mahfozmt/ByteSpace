@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ByteSpace — Get Access to Hundreds of Courses</title>
+  <meta name="description" content="Explore hundreds of online courses from expert creators on ByteSpace.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-home">
+
+  <!-- Hero -->
+  <section class="home-hero grid-bg" aria-labelledby="hero-title">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html" aria-label="ByteSpace home"><img src="assets/svg/logo.svg" alt="ByteSpace" width="171" height="37"></a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a class="is-active" href="index.html" aria-current="page">Home</a></li>
+            <li><a href="search.html">Courses</a></li>
+            <li><a href="creator-profile.html">Creators</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Join Us</a>
+          <a class="site-header__cart" href="course-details.html" aria-label="Cart"><img src="assets/svg/icon-cart.svg" alt="" width="16" height="20"></a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="home-hero__ring" aria-hidden="true"></div>
+    <div class="orns" aria-hidden="true">
+      <img class="orn" src="assets/img/3d-squiggle-b-lime.png" alt="" style="left:-121.6px;top:221px;width:386.8px">
+      <img class="orn orn--flip" src="assets/img/3d-squiggle-b-white.png" alt="" style="left:183.8px;top:477px;width:175.8px">
+      <img class="orn" src="assets/img/3d-torus-white.png" alt="" style="left:14.4px;top:681.3px;width:343.7px">
+      <img class="orn" src="assets/img/3d-cylinder-lime.png" alt="" style="left:1227.1px;top:220.2px;width:371.8px">
+      <img class="orn" src="assets/img/3d-pyramid-white.png" alt="" style="left:1104px;top:463.6px;width:188.9px">
+      <img class="orn" src="assets/img/3d-squiggle-a-white.png" alt="" style="left:1123.9px;top:672px;width:331.5px">
+    </div>
+
+    <div class="home-hero__copy">
+      <h1 id="hero-title">Get Access to Hundreds<br>Courses Available</h1>
+      <p>Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.</p>
+    </div>
+
+    <form class="home-hero__search" action="search.html" role="search">
+      <label>
+        <img src="assets/svg/icon-search.svg" alt="" width="18" height="18">
+        <span class="visually-hidden">Search courses</span>
+        <input type="search" name="q" placeholder="Course, topic, creator">
+      </label>
+      <button class="btn btn--primary" type="submit">Search</button>
+    </form>
+
+    <img class="home-hero__man" src="assets/img/hero-man-raw.png" alt="Smiling student with headset holding a laptop" width="578" height="541">
+
+    <div class="float-card home-hero__card-ux">
+      <strong>UI/UX Design</strong>
+      <span>200 Courses&nbsp; •&nbsp; 1000+ Students</span>
+    </div>
+    <div class="float-card home-hero__card-progress">
+      <span>Learning Progress</span>
+      <strong>55%</strong>
+      <i class="bar"><i style="width:56%"></i></i>
+    </div>
+    <div class="float-card home-hero__card-students">
+      <strong>Happy Students</strong>
+      <span class="rate"><b>4.5</b> (240) <img src="assets/svg/icon-star-lime.svg" alt="" width="14" height="13"></span>
+      <div class="avatars avatars--lg" aria-hidden="true">
+        <img src="assets/img/avatar-asian-man.png" alt="">
+        <img src="assets/img/avatar-pink-beard.png" alt="">
+        <img src="assets/img/avatar-blonde.png" alt="">
+        <img src="assets/img/avatar-yellow-woman.png" alt="">
+        <img src="assets/img/avatar-blue-tee-man.png" alt="">
+        <img src="assets/img/avatar-baker.png" alt="">
+        <img src="assets/img/avatar-cyclist.png" alt="">
+        <span>2K+</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Partners -->
+    <section class="home-partners section" aria-label="Partners">
+      <img src="assets/svg/partners.svg" alt="Partner logos" width="1132" height="42">
+    </section>
+
+    <!-- Course discovery -->
+    <section class="home-courses" aria-labelledby="discover-title">
+      <div class="home-courses__head">
+        <h2 id="discover-title">Discover Your Passion,<br>Build Your Skills</h2>
+        <p>At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.</p>
+      </div>
+
+      <div class="home-tabs" role="tablist" aria-label="Course categories" data-tabs>
+        <div class="home-tabs__row">
+          <button class="pill is-active" role="tab" aria-selected="true">Featured</button>
+          <button class="pill" role="tab" aria-selected="false">Music</button>
+          <button class="pill" role="tab" aria-selected="false">Drawing &amp; Painting</button>
+          <button class="pill" role="tab" aria-selected="false">Marketing</button>
+          <button class="pill" role="tab" aria-selected="false">Animation</button>
+          <button class="pill" role="tab" aria-selected="false">Social Media</button>
+          <button class="pill" role="tab" aria-selected="false">UI/UX Design</button>
+          <button class="pill" role="tab" aria-selected="false">Creative Marketing</button>
+        </div>
+        <div class="home-tabs__row">
+          <button class="pill" role="tab" aria-selected="false">Digital Illustration</button>
+          <button class="pill" role="tab" aria-selected="false">Film &amp; Video</button>
+          <button class="pill" role="tab" aria-selected="false">Crafts</button>
+          <button class="pill" role="tab" aria-selected="false">Freelance &amp; Entrepreneurship</button>
+          <button class="pill" role="tab" aria-selected="false">Graphic Design</button>
+          <button class="pill" role="tab" aria-selected="false">Photography</button>
+        </div>
+        <div class="home-tabs__row">
+          <button class="pill" role="tab" aria-selected="false">Productivity</button>
+          <button class="pill" role="tab" aria-selected="false">Web Development</button>
+          <button class="pill" role="tab" aria-selected="false">Data Science</button>
+          <button class="pill" role="tab" aria-selected="false">Cooking</button>
+          <a class="pill more" href="search.html">+ More</a>
+        </div>
+      </div>
+
+      <div class="home-course-grid">
+        <article class="course-card">
+          <a class="course-card__media" href="course-details.html"><img src="assets/img/course-figma-basic.jpg" alt="" width="341" height="195">
+            <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+          <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Learn Figma from Basic</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+          <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+          <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+            <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+          <p class="course-card__price">$25<small>/lifetime</small></p>
+        </article>
+        <article class="course-card">
+          <a class="course-card__media" href="course-details.html"><img src="assets/img/course-digital-asset.jpg" alt="" width="341" height="195">
+            <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+          <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Build Digital Asset</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+          <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+          <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+            <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+          <p class="course-card__price">$25<small>/lifetime</small></p>
+        </article>
+        <article class="course-card">
+          <a class="course-card__media" href="course-details.html"><img src="assets/img/course-big-data.jpg" alt="" width="341" height="195">
+            <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+          <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">the Power of Big Data</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+          <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+          <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+            <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+          <p class="course-card__price">$25<small>/lifetime</small></p>
+        </article>
+        <article class="course-card">
+          <a class="course-card__media" href="course-details.html"><img src="assets/img/course-productivity.jpg" alt="" width="341" height="195">
+            <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+          <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Balancing Productivity and Life</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+          <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+          <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+            <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+          <p class="course-card__price">$25<small>/lifetime</small></p>
+        </article>
+        <article class="course-card">
+          <a class="course-card__media" href="course-details.html"><img src="assets/img/course-money.jpg" alt="" width="341" height="195">
+            <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+          <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Mastering Money Management</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+          <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+          <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+            <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+          <p class="course-card__price">$25<small>/lifetime</small></p>
+        </article>
+        <article class="course-card">
+          <a class="course-card__media" href="course-details.html"><img src="assets/img/course-startup.jpg" alt="" width="341" height="195">
+            <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+          <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">From Idea to Startup Success</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star.svg" alt=""></span></div>
+          <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+          <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+            <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+          <p class="course-card__price">$25<small>/lifetime</small></p>
+        </article>
+      </div>
+
+      <div class="home-paths">
+        <h2>Explore Diverse Learning Paths at Bytespace</h2>
+        <p>At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.</p>
+        <nav class="home-cats" aria-label="Course categories">
+          <a class="cat-card" href="search.html?c=design"><img src="assets/svg/cat-design.svg" alt="">Design</a>
+          <a class="cat-card" href="search.html?c=development"><img src="assets/svg/cat-development.svg" alt="">Development</a>
+          <a class="cat-card" href="search.html?c=it-software"><img src="assets/svg/cat-it-software.svg" alt="">IT &amp; Software</a>
+          <a class="cat-card" href="search.html?c=business"><img src="assets/svg/cat-business.svg" alt="">Business</a>
+          <a class="cat-card" href="search.html?c=marketing"><img src="assets/svg/cat-marketing.svg" alt="">Marketing</a>
+          <a class="cat-card" href="search.html?c=photography"><img src="assets/svg/cat-photography.svg" alt="">Photography</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Learner + creator features -->
+    <section class="home-feature" aria-label="Why ByteSpace">
+      <span class="blob blob--lime" style="left:-152px;top:-0px;width:1137px;height:1137px;opacity:.4"></span>
+      <span class="blob blob--lime" style="left:-508px;top:651px;width:1137px;height:1137px;opacity:.16"></span>
+      <span class="blob blob--blue" style="left:811px;top:110px;width:1137px;height:1137px;opacity:.08"></span>
+
+      <div class="home-feature__learn">
+        <article class="course-card course-card--feature">
+          <a class="course-card__media" href="course-details.html"><img src="assets/img/course-figma-basic.jpg" alt="" width="341" height="195">
+            <span class="course-card__chips"><span class="chip">17 Lessons</span><span class="chip">2 hours 16 mins</span><span class="chip">59 Comments</span></span></a>
+          <div class="course-card__head"><h3 class="course-card__title"><a href="course-details.html">Learn Figma from Basic</a></h3><span class="course-card__rating">4.5 <img src="assets/svg/icon-star-lime.svg" alt=""></span></div>
+          <p class="course-card__by">by <a href="creator-profile.html">purepearl studio</a></p>
+          <div class="course-card__meta"><span class="level-badge"><img src="assets/svg/icon-level.svg" alt="">Beginner</span>
+            <span class="avatars"><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><span>26+</span></span></div>
+          <p class="course-card__price">$25<small>/lifetime</small></p>
+        </article>
+        <img class="feature-man" src="assets/img/hero-man-raw.png" alt="Student smiling with headset" width="577" height="540">
+        <img class="orn" src="assets/img/3d-squiggle-a-lime.png" alt="" style="left:1162px;top:187px;width:216px">
+        <div class="float-card float-card--lg feature-progress">
+          <span>Learning Progress</span><strong>55%</strong><i class="bar"><i style="width:56%"></i></i>
+        </div>
+        <h2>Your Path to Professional<br>Growth Starts Here!</h2>
+        <p>Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.</p>
+        <dl class="home-stats">
+          <div><dt class="visually-hidden">Students</dt><dd>12K</dd><span>Students</span></div>
+          <div><dt class="visually-hidden">Courses</dt><dd>70+</dd><span>Courses</span></div>
+          <div><dt class="visually-hidden">Creators</dt><dd>16</dd><span>Creators</span></div>
+        </dl>
+      </div>
+
+      <div class="home-feature__creator">
+        <div class="stat-card stat-card--revenue"><span class="t">Total Revenue</span><span class="s">July 1-28</span><strong>$120.29</strong><i class="bar"><i style="width:56%"></i></i></div>
+        <div class="stat-card stat-card--ytd"><span class="t">Year to Date</span><span class="s">2023</span><strong>$1,200.38</strong><em>+12$</em></div>
+        <div class="feature-woman"><img src="assets/img/creator-woman.png" alt="Smiling creator with headset holding a tablet" width="683" height="683"></div>
+        <img class="orn" src="assets/img/3d-squiggle-b-lime.png" alt="" style="left:424px;top:858px;width:216px">
+        <div class="float-card feature-students">
+          <strong>Happy Students</strong>
+          <span class="rate"><b>4.5</b> (240) <img src="assets/svg/icon-star-lime.svg" alt="" width="14" height="13"></span>
+          <div class="avatars avatars--lg" aria-hidden="true">
+            <img src="assets/img/avatar-asian-man.png" alt=""><img src="assets/img/avatar-pink-beard.png" alt=""><img src="assets/img/avatar-blonde.png" alt=""><img src="assets/img/avatar-yellow-woman.png" alt=""><img src="assets/img/avatar-blue-tee-man.png" alt=""><img src="assets/img/avatar-baker.png" alt=""><img src="assets/img/avatar-cyclist.png" alt=""><span>2K+</span>
+          </div>
+        </div>
+        <h2>Create &amp; Manage<br>Courses Easily.</h2>
+        <p><strong>ByteSpace</strong> supports individuals or entities in the creation, publication, and administration of educational courses.</p>
+        <ul class="home-checks">
+          <li>Share Your Expertise</li>
+          <li>Monetize Your Passion</li>
+          <li>Flexibility and Autonomy</li>
+          <li>Build a Community</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="home-cta grid-bg" aria-labelledby="cta-title">
+      <div class="orns" aria-hidden="true">
+        <img class="orn" src="assets/img/3d-squiggle-b-lime.png" alt="" style="left:-121.6px;top:-162px;width:386.8px">
+        <img class="orn orn--flip" src="assets/img/3d-squiggle-b-white.png" alt="" style="left:178.8px;top:5px;width:175.8px">
+        <img class="orn" src="assets/img/3d-pyramid-lime.png" alt="" style="left:1078px;top:0;width:188.9px">
+        <img class="orn" src="assets/img/3d-cone-white.png" alt="" style="left:-50px;top:224.6px;width:188.9px">
+        <img class="orn" src="assets/img/3d-torus-lime.png" alt="" style="left:16.4px;top:298.3px;width:343.7px">
+        <img class="orn" src="assets/img/3d-cylinder-white.png" alt="" style="left:1222.1px;top:5.2px;width:371.8px">
+        <img class="orn" src="assets/img/3d-squiggle-a-lime.png" alt="" style="left:1106.9px;top:289px;width:331.5px">
+      </div>
+      <h2 id="cta-title">Unlock Your Potential as a<br>Creator with ByteSpace</h2>
+      <p>Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.</p>
+      <a class="btn btn--primary" href="register.html">Join as Creator</a>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="home-voices" aria-labelledby="voices-title">
+      <h2 id="voices-title">Discover What Our Community Is Saying</h2>
+      <p>At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.</p>
+      <figure class="quote-card" style="left:118px"><img src="assets/img/avatar-yellow-woman.png" alt="Sarah M."><figcaption><h3>Sarah M.</h3><p class="role">Enthusiastic Learner</p></figcaption><blockquote><p>"ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."</p></blockquote></figure>
+      <figure class="quote-card" style="left:533px"><img src="assets/img/avatar-grey-man.png" alt="James L."><figcaption><h3>James L.</h3><p class="role">Lifelong Learner</p></figcaption><blockquote><p>"I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."</p></blockquote></figure>
+      <figure class="quote-card" style="left:948px"><img src="assets/img/avatar-alex.png" alt="Alex B."><figcaption><h3>Alex B.</h3><p class="role">Inspired Creator</p></figcaption><blockquote><p>"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally."</p></blockquote></figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="index.html" aria-label="ByteSpace home"><img src="assets/svg/logo-dark.svg" alt="ByteSpace" width="171" height="37"></a>
+        <p>Stay Up to date with our latest features and releases by joining our newsletter.</p>
+      </div>
+      <form class="site-footer__form" action="#">
+        <label class="visually-hidden" for="nl-email">Email</label>
+        <input id="nl-email" type="email" placeholder="Enter your email">
+        <button class="btn btn--primary" type="submit">Search</button>
+      </form>
+      <p class="site-footer__legal">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+      <nav class="site-footer__cols" aria-label="Footer">
+        <ul><li><a href="search.html">Featured Courses</a></li><li><a href="search.html">Featured Categories</a></li><li><a href="search.html?c=business">Business</a></li><li><a href="search.html?c=it-software">IT</a></li><li><a href="search.html?c=design">Design</a></li></ul>
+        <ul><li><a href="search.html?c=development">Development</a></li><li><a href="search.html?c=marketing">Marketing</a></li><li><a href="search.html?c=photography">Photography</a></li><li><a href="search.html">Finance</a></li><li><a href="search.html">Sport</a></li></ul>
+        <ul><li><a href="register.html">Become a Creator</a></li><li><a href="creator-profile.html">Affiliate Program</a></li><li><a href="404.html">Contact</a></li><li><a href="404.html">Help</a></li><li><a href="404.html">About</a></li></ul>
+      </nav>
+      <div class="site-footer__bar">
+        <p>@ 2023 ByteSpace. All rights reserved.</p>
+        <ul><li><a href="404.html">Privacy Policy</a></li><li><a href="404.html">Terms of Service</a></li><li><a href="404.html">Cookies Settings</a></li></ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
